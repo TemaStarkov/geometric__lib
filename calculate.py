@@ -1,11 +1,10 @@
 import circle
 import square
+import triangle
 
-
-figs = ['circle', 'square']
+figs = ['circle', 'square', 'triangle']
 funcs = ['perimeter', 'area']
 sizes = {}
-
 
 def calc(fig, func, size):
     assert fig in figs
@@ -13,7 +12,6 @@ def calc(fig, func, size):
 
     result = eval(f'{fig}.{func}(*{size})')
     return result
-
 
 if __name__ == "__main__":
     func = ''
