@@ -35,7 +35,8 @@ class TestCalculations(unittest.TestCase):
         self.assertAlmostEqual(calc('circle', 'area', [3]), 28.274333882308138)
 
     def test_calc_circle_perimeter(self):
-        self.assertAlmostEqual(calc('circle', 'perimeter', [3]), 18.84955592153876)
+        self.assertAlmostEqual(calc('circle', 'perimeter', [3]),
+                               18.84955592153876)
 
     def test_calc_triangle_area(self):
         self.assertAlmostEqual(calc('triangle', 'area', [3, 4, 5]), 6.0)
