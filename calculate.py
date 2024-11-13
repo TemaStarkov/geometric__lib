@@ -6,12 +6,14 @@ figs = ['circle', 'square']
 funcs = ['perimeter', 'area']
 sizes = {}
 
+
 def calc(fig, func, size):
     assert fig in figs
     assert func in funcs
 
     result = eval(f'{fig}.{func}(*{size})')
     return result
+
 
 if __name__ == "__main__":
     func = ''
