@@ -17,8 +17,7 @@ def calc(fig, func, size):
     assert fig in figs
     assert func in funcs
 
-    module = modules[fig]
-    result = eval(f'module.{func}(*{size})')
+    result = eval(f'modules[fig].{func}(*{size})')
     return result
 
 
